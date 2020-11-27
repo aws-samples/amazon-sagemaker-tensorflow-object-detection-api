@@ -4,7 +4,6 @@ import json
 import argparse
 from utils.tf_record_util import TfRecordGenerator
 
-
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--input", type=str, default="")
@@ -17,7 +16,7 @@ if __name__ == "__main__":
     ground_truth_manifest = args.ground_truth_manifest
     label_map = json.loads(args.label_map)
     output_folder = args.output
-    
+
     # Feed in necessary path variables from above operations
     tf_record_generator = TfRecordGenerator(image_dir=input_folder,
                                             manifest=ground_truth_manifest,
