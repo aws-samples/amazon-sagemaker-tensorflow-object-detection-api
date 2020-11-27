@@ -12,12 +12,13 @@ This implementation shows how to do the following:
 
 ### Get started
 Clone this respotory into your Amazon SageMaker notebook instance:
+
 ```
 git clone https://github.com/aws-samples/amazon-sagemaker-tensorflow-object-detection-api.git
 ```
 
 ### Instructions
-You will use an example dataset from the [inaturalist.org](http://inaturalist.org/) and train a model to recognise bees from RGB images.
+You will use an example dataset from the [inaturalist.org](http://inaturalist.org/) and train a Tensorflow Object Detection model to recognise bees from RGB images.
 This dataset contains 500 images of bees that have been uploaded by inaturalist users for the purposes of recording the observation and identification. We only used images that their users have licensed under [CC0](https://creativecommons.org/share-your-work/public-domain/cc0/) license.
 
 Follow the step-by-step guide by executing the notebooks in the following folders:
@@ -33,6 +34,7 @@ SageMaker debugger allows you to [capture TensorBoard data](https://sagemaker.re
 See 2_train_model/train_model.ipynb for command details.
 
 You can start the TensorBoard server from your notebook with the following command:
+
 ```python
 job_artifacts_path = estimator.latest_job_tensorboard_artifacts_path()
 tensorboard_s3_output_path = f'{job_artifacts_path}/train'
@@ -40,10 +42,11 @@ tensorboard_s3_output_path = f'{job_artifacts_path}/train'
 !F_CPP_MIN_LOG_LEVEL=3 AWS_REGION=<ADD YOUR REGION HERE> tensorboard --logdir=$tensorboard_s3_output_path
 ```
 
-TensorBoard server will run on your notebook instance and you can open it by visiting this url:
+TensorBoard server will run on your local notebook instance and you can open it by visiting the following url (the default port is typically 6006: 
 ```
 https://your-notebok-instance-name.notebook.your-region.sagemaker.aws/proxy/6006/
 ```
+
 ## Security
 
 See [CONTRIBUTING](CONTRIBUTING.md#security-issue-notifications) for more information.
