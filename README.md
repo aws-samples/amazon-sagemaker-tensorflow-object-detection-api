@@ -26,8 +26,9 @@ Follow the step-by-step guide by executing the notebooks in the following folder
 * 2_train_model/train_model.ipynb
 * 3_predict/deploy_endpoint.ipynb
 
-
-![image](media/3898660.jpg)
+|||
+| -------------- | -------------- |
+|![](media/3898660.jpg)|![](media/image.png)|
 
 ### Monitor model training jobs with Tensorboard
 SageMaker debugger allows you to [capture TensorBoard data](https://sagemaker.readthedocs.io/en/stable/amazon_sagemaker_debugger.html#capture-real-time-tensorboard-data-from-the-debugging-hook) into a chosen S3 location and monitor the training progress in real-time with TensorBoard.  
