@@ -11,7 +11,7 @@ This implementation shows how to do the following:
 * Deploy your model on a SageMaker Endpoint and visualize predictions
 
 ### Get started
-Clone this respotory into your Amazon SageMaker notebook instance:
+Clone this repository into your Amazon SageMaker notebook instance:
 
 ```
 git clone https://github.com/aws-samples/amazon-sagemaker-tensorflow-object-detection-api.git
