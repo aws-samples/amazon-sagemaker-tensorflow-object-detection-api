@@ -45,7 +45,7 @@ tensorboard_s3_output_path = f'{job_artifacts_path}/train'
 
 TensorBoard server will run on your local notebook instance and you can open it by visiting the following url (the default port is typically 6006: 
 ```
-https://your-notebok-instance-name.notebook.your-region.sagemaker.aws/proxy/6006/
+https://your-notebook-instance-name.notebook.your-region.sagemaker.aws/proxy/6006/
 ```
 
 ## Security
