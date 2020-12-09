@@ -44,3 +44,6 @@ docker tag ${image} ${fullname}
 
 echo "Pushing image to ECR ${fullname}"
 docker push ${fullname}
+
+# Writing the image name to let the calling process extract it without manual intervention:
+echo "${fullname}" > ecr_image_fullname.txt
