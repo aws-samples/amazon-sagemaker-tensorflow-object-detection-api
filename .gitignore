@@ -8,6 +8,12 @@ __pycache__/
 # C extensions
 #*.so
 
+# Don't commit downloaded dataset:
+/1_prepare_data/data
+
+# Make sure to download the latest version from TF Object Detection:
+/1_prepare_data/docker/code/utils/dataset_util.py
+
 # Distribution / packaging
 .Python
 build/

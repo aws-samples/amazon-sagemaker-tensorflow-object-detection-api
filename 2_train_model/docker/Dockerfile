@@ -11,6 +11,9 @@ RUN apt-get update && apt-get install -y \
     python3-pil \
     python3-lxml \
     python3-tk \
+    ffmpeg \
+    libsm6 \
+    libxext6 \
     wget
 
 # Copy this version of of the model garden into the image
