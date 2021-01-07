@@ -1,4 +1,4 @@
-FROM tensorflow/tensorflow:2.4.0-gpu
+FROM tensorflow/tensorflow:nightly-gpu
 
 ARG DEBIAN_FRONTEND=noninteractive
 
@@ -11,9 +11,7 @@ RUN apt-get update && apt-get install -y \
     python3-pil \
     python3-lxml \
     python3-tk \
-    ffmpeg \
-    libsm6 \
-    libxext6 \
+    libgl1-mesa-dev \
     wget
 
 # Copy this version of of the model garden into the image
