@@ -1,4 +1,4 @@
-FROM tensorflow/tensorflow:nightly-gpu
+FROM tensorflow/tensorflow:2.5.0-gpu
 
 ARG DEBIAN_FRONTEND=noninteractive
 
