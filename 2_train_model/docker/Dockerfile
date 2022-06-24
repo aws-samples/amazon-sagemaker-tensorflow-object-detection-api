@@ -1,6 +1,10 @@
-FROM tensorflow/tensorflow:2.5.0-gpu
+FROM tensorflow/tensorflow:2.9.0-gpu
 
 ARG DEBIAN_FRONTEND=noninteractive
+
+RUN rm /etc/apt/sources.list.d/cuda.list
+RUN rm /etc/apt/sources.list.d/nvidia-ml.list
+# Adding the above 2 lines to workaround a recent issue introduced by NVIDIA https://github.com/NVIDIA/nvidia-docker/issues/1632
 
 # Install apt dependencies
 RUN apt-get update && apt-get install -y \

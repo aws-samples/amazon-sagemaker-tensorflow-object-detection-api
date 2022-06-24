@@ -29,4 +29,5 @@ echo "Pushing image to ECR ${fullname}"
 docker push ${fullname}
 
 # Writing the image name to let the calling process extract it without manual intervention:
+echo "Saving ECR image URI into ecr_image_fullname.txt"
 echo "${fullname}" > ecr_image_fullname.txt
