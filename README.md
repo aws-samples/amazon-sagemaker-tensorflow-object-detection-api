@@ -17,15 +17,13 @@ Clone this repository into your Amazon SageMaker notebook instance:
 git clone https://github.com/aws-samples/amazon-sagemaker-tensorflow-object-detection-api.git
 ```
 
-Use the 0_set_up_env to set up a conda env with the necassry libraries.
-This is to ensure the imports in the notebooks are working, the libraries used in the processing, training, deployement components are managed through docker containers.
-If you have your own personal environement, feel free to skip but take a look at the 0_set_up_env/requirements.txt to know what to expect.
 
 ### Instructions
 You will use an example dataset from the [inaturalist.org](http://inaturalist.org/) and train a Tensorflow Object Detection model to recognise bees from RGB images.
 This dataset contains 500 images of bees that have been uploaded by inaturalist users for the purposes of recording the observation and identification. We only used images that their users have licensed under [CC0](https://creativecommons.org/share-your-work/public-domain/cc0/) license.
 
 Follow the step-by-step guide by executing the notebooks in the following folders:
+* [Optional] 0_set_up_env/setup-conda-env.sh
 * 1_prepare_data/prepare_data.ipynb
 * 2_train_model/train_model.ipynb
 * 3_predict/deploy_endpoint.ipynb
