@@ -33,6 +33,14 @@ ENV PATH="/home/tensorflow/.local/bin:${PATH}"
 RUN python -m pip install -U pip
 RUN python -m pip install .
 
+
+RUN pip uninstall opencv-python -y
+RUN pip uninstall opencv-contrib-python-headless -y
+RUN pip uninstall opencv-python-headless -y
+
+RUN pip install opencv-python==4.5.2.52
+RUN pip install opencv-python-headless==4.5.2.52
+
 ENV TF_CPP_MIN_LOG_LEVEL 3
 
 # Install SageMaker training-toolkit
