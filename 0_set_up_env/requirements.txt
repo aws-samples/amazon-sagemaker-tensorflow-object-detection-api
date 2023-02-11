@@ -15,4 +15,4 @@ tensorflow-estimator==2.9.0
 tensorflow-io==0.26.0
 tensorflow-io-gcs-filesystem==0.26.0
 ipykernel==6.15.0
-ipython==7.34.0
+ipython==8.10.0
